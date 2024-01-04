@@ -17,6 +17,7 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
 
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
@@ -331,9 +332,22 @@
               placeholder="email@company.com"
             />
           </form>
-          <button class="card-button">Subscribe to monthly newsletter</button>
+          <button class="card-button" id="card-button-submit" onclick="toggleModal()">Subscribe to monthly newsletter</button>
         </div>
       </div>
+
+     <!-- Sign-up form end -->
+    <div class="success-container">
+      <!-- Success message start -->
+      <span class="success-icon"></span>
+      <h1 class="success-title">Thanks for subscribing!</h1>
+      <p class="success-message">
+        A confirmation email has been sent to ash@loremcompany.com.
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+      <button class="success-button" onclick="toggleModal()" id="success-button-id">Dismiss message</button>
+      <!-- Success message end -->
+    </div>
     </main>
 
     <div class="attribution">
